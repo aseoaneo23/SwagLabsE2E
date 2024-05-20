@@ -1,30 +1,27 @@
-Feature: Login de usuarios en swag labs
+Feature: User Login on Swag Labs
+  As a user
+  I want to access the Swag Labs page
+  So that I can view the items on the main page
 
-Como usuario 
-Quiero acceder a la página de swag labs
-Para poder ver los artículos de la página principal
+  Background:
+    Given a user on the Login page
 
-Background: 
-    Given un usuario en la página de Login
+  Scenario Outline: login completes successfully
+    When the user fills in the login form with username: "<username>" and password: "<password>"
+    Then the user is redirected to the home page
 
-Scenario Outline: el login se completa correctamente
-    When el usuario completa el formulario de login con usuario: "<usuario>" y contraseña: "<contraseña>"
-    Then el usuario es redirigido a la página de inicio
+    Examples:
+      | username                | password     |
+      | standard_user           | secret_sauce |
+      | problem_user            | secret_sauce |
+      | performance_glitch_user | secret_sauce |
 
-Examples: 
+  Scenario Outline: login fails due to credentials
+    When the user fills in the login form with username: "<username>" and password: "<password>"
+    Then the page shows an error: "<error>"
 
-| usuario                 | contraseña   |
-| standard_user           | secret_sauce |
-| problem_user            | secret_sauce |
-| performance_glitch_user             | secret_sauce |
-
-Scenario Outline: el login falla debido a los credenciales
-    When el usuario completa el formulario de login con usuario: "<usuario>" y contraseña: "<contraseña>"
-    Then la página muestra un error: "<error>"
-
-Examples: 
-
-| usuario       | contraseña   | error                                                                     |
-| user          | secret_sauce | Epic sadface: Username and password do not match any user in this service |
-| standard_user |              | Epic sadface: Password is required                                        |
-|               | secret_sauce | Epic sadface: Username is required                                        |
+    Examples:
+      | username      | password     | error                                                                     |
+      | user          | secret_sauce | Epic sadface: Username and password do not match any user in this service |
+      | standard_user |              | Epic sadface: Password is required                                        |
+      |               | secret_sauce | Epic sadface: Username is required                                        |

@@ -1,12 +1,12 @@
-import { constantes_login } from "../constants"
+import { login_constants } from "../constants"
 
 class LoginPage {
     elements = {
         getUrl : () => cy.url(),
-        getUsernameInput : () => cy.get(constantes_login.USERNAME_INPUT),
-        getPasswordInput : () => cy.get(constantes_login.PASSWORD_INPUT),
-        getSubmitButton : () => cy.get(constantes_login.SUBMIT_BTN),
-        getErrorMessage : () => cy.get(constantes_login.ERROR_ELEMENT)
+        getUsernameInput : () => cy.get(login_constants.USERNAME_INPUT),
+        getPasswordInput : () => cy.get(login_constants.PASSWORD_INPUT),
+        getSubmitButton : () => cy.get(login_constants.SUBMIT_BTN),
+        getErrorMessage : () => cy.get(login_constants.ERROR_ELEMENT)
     }
 
     visitSwagLabs = () => cy.visit('/')
@@ -24,9 +24,9 @@ class LoginPage {
         this.elements.getSubmitButton().click()
     }
 
-    checkRedirection = () => this.elements.getUrl().should('eq', constantes_login.INVENTORY_URL)
+    checkRedirection = () => this.elements.getUrl().should('eq', login_constants.INVENTORY_URL)
 
-    checkErrorMessage = () => this.elements.getErrorMessage().should('eq', error)
+    checkErrorMessage = (error) => this.elements.getErrorMessage().should('have.text', error)
 }
 
 module.exports = new LoginPage()

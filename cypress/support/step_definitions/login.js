@@ -1,17 +1,17 @@
 import Login from '../../pages/login_page'
 
-Given('un usuario en la página de Login', () => {
+Given('a user on the Login page', () => {
     Login.visitSwagLabs()
 })
 
-When('el usuario completa el formulario de login con usuario: {string} y contraseña: {string}', (usuario,contraseña) => {
+When('the user fills in the login form with username: {string} and password: {string}', (usuario,contraseña) => {
     Login.completeCredentials(usuario,contraseña)
 })
 
-Then('el usuario es redirigido a la página de inicio', () => {
+Then('the user is redirected to the home page', () => {
     Login.checkRedirection()
 })
 
-Then('la página muestra un error: {string}', () => {
-
+Then('the page shows an error: {string}', (error) => {
+    Login.checkErrorMessage(error)
 })
