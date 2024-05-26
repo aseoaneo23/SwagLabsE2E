@@ -6,8 +6,17 @@ class MainPage {
     elements = {
         getUrl : () => cy.url(),
         getBurguerBtn : () => cy.get(main_page_constants.BURGUER_BTN),
-        getLogoutLink : () => cy.get(main_page_constants.LOGOUT_LINK)
-        
+        getLogoutLink : () => cy.get(main_page_constants.LOGOUT_LINK),
+    }
+
+    //Replace id on constant to click on specific button
+    buildProductButton = productId => {
+        console.log(productId)
+       return main_page_constants.PRODUCT_DETAILS_BTN.replace('idp', productId)
+    }
+    //Replace  id on url parameters
+    buildUrlOfProductDetail = productId => {
+        return main_page_constants.PRODUCT_DETAILS_URL.replace('num', productId)
     }
 
     enterToMainPage = () => {
@@ -21,10 +30,16 @@ class MainPage {
         this.elements.getLogoutLink().click()
     }
 
-    checkRedirection = () => {
-        this.elements.getUrl().should('eq', main_page_constants.LOGIN_URL)
+    checkRedirection = url => {
+        this.elements.getUrl().should('eq', url)
     }
 
+    selectAProduct = productId => {
+        const button = cy.get(this.buildProductButton(productId))
+        button.click()
+    }
+
+    
 }
 
 module.exports = new MainPage()

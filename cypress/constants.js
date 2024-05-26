@@ -4,7 +4,9 @@ export const main_page_constants = {
     PASS : 'secret_sauce',
     BURGUER_BTN : '#react-burger-menu-btn',
     LOGOUT_LINK : '#logout_sidebar_link',
-    LOGIN_URL : 'https://www.saucedemo.com/'
+    LOGIN_URL : 'https://www.saucedemo.com/',
+    PRODUCT_DETAILS_BTN : '[data-test="item-idp-title-link"]',
+    PRODUCT_DETAILS_URL : 'https://www.saucedemo.com/inventory-item.html?id=num'
 }
 export const login_constants = {
     USERNAME_INPUT : '#user-name',
