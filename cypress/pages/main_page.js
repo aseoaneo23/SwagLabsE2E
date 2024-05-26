@@ -1,5 +1,5 @@
 import { main_page_constants } from "../constants"
-//import Login from '../../pages/login_page'
+import Login from './login_page'
 
 class MainPage {
     
@@ -11,13 +11,9 @@ class MainPage {
     }
 
     enterToMainPage = () => {
-        //Login.visitSwagLabs()
-        //Login.completeCredentials(main_page_constants.USER,main_page_constants.PASS)
-        //Login.checkRedirection()
-        cy.visit('/')
-        cy.get('#user-name').type('standard_user')
-        cy.get('#password').type('secret_sauce')
-        cy.get('#login-button').click()
+        Login.visitSwagLabs()
+        Login.completeCredentials(main_page_constants.USER,main_page_constants.PASS)
+        Login.checkRedirection()
     }
 
     proceedToLogout = () => {
@@ -26,7 +22,7 @@ class MainPage {
     }
 
     checkRedirection = () => {
-        this.elements.getUrl().should('eq', '/')
+        this.elements.getUrl().should('eq', main_page_constants.LOGIN_URL)
     }
 
 }
