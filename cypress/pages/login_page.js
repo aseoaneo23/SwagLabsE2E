@@ -27,6 +27,13 @@ class LoginPage {
     checkRedirection = () => this.elements.getUrl().should('eq', login_constants.INVENTORY_URL)
 
     checkErrorMessage = (error) => this.elements.getErrorMessage().should('have.text', error)
+
+    //Function to speed up the process of login. It suposed to be used on other features where login process is not very important 
+    completeValidCredentials = () => {
+        this.elements.getUsernameInput().clear().type(login_constants.VALID_USERNAME)
+        this.elements.getPasswordInput().clear().type(login_constants.VALID_PASSWORD)
+        this.elements.getSubmitButton().click()
+    }
 }
 
 module.exports = new LoginPage()
