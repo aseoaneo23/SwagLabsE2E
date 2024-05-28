@@ -8,14 +8,16 @@ export const main_page_constants = {
     PRODUCT_DETAILS_BTN : '[data-test="item-idp-title-link"]',
     PRODUCT_DETAILS_URL : 'https://www.saucedemo.com/inventory-item.html?id=num',
     ADD_TO_CART_BTN : '[data-test="add-to-cart-sauce-labs-item"]',
-    AVAILABLE_PRODUCTS : ["backpack","bike-light","bolt-t-shirt","fleece-jacket","onesie"],
+    AVAILABLE_PRODUCTS : ["backpack","bike-light","bolt-t-shirt","fleece-jacket","onesie"]
 }
 
 export const cart_constants = {
     CART_BTN : '[data-test="shopping-cart-link"]',
     CART_URL : 'https://www.saucedemo.com/cart.html',
     CART_LIST : '[data-test="cart-list"]',
-    REMOVE_FROM_CART_BTN : '[data-test="remove-sauce-labs-item"]'
+    REMOVE_FROM_CART_BTN : '[data-test="remove-sauce-labs-item"]',
+    CONTINUE_TO_CHECKOUT : '[data-test="checkout"]',
+    CART_ITEM : '[data-test="inventory-item"]'
 
 }
 
@@ -27,7 +29,19 @@ export const login_constants = {
     SUBMIT_BTN : '#login-button',
     INVENTORY_URL : 'https://www.saucedemo.com/inventory.html',
     ERROR_ELEMENT : '[data-test="error"]',
-    ERROR_ON_USERNAME : 'Epic sadface: Username is required',
-    ERROR_ON_PASSWORD : 'Epic sadface: Password is required',
-    ERROR_ON_MATCH : 'Epic sadface: Username and password do not match any user in this service' 
+}
+
+export const checkout_constants = {
+    ERROR_CONTAINER : '[data-test="error"]',
+    FIRST_NAME_INPUT : '[data-test="firstName"]',
+    LAST_NAME_INPUT : '[data-test="lastName"]',
+    ZIPCODE_INPUT : '[data-test="postalCode"]',
+    CONTINUE_BTN : '[data-test="continue"]',
+    CHECKOUT_URL : 'https://www.saucedemo.com/checkout-step-one.html',
+    OVERVIEW_URL : 'https://www.saucedemo.com/checkout-step-two.html',
+}
+
+export const overview_constants = {
+    FINISH_ORDER_BTN : '[data-test="finish"]',
+    ORDER_DONE_MSG : 'Thank you for your order!'
 }
