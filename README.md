@@ -1,5 +1,5 @@
-![SwagLabs e2e (1) (1)](https://github.com/aseoaneo23/SwagLabsE2E/assets/145000901/6c8d6b71-4149-48fe-bb7d-1bad2286a10a)
- 
+![SwagLabs_E2E_suit](https://github.com/aseoaneo23/SwagLabsE2E/assets/145000901/a540e0b3-2fbb-4be0-a1f9-ab4b90b3e2c9)
+
 ![Static Badge](https://img.shields.io/badge/PFC%20DAW-%20blue)
  ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green) 
  ![Static Badge](https://img.shields.io/badge/NPM-v10.2.1-lightblue) 
