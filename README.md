@@ -131,9 +131,9 @@ Instrucciones acerca de requerimientos, instalación y ejecucción del proyecto 
 
 ### Requirements
 
-- **Entorno (SO):** Windows 11 v23H2
+- **Entorno (SO):**  macOS 10.15 y superior, Linux Ubuntu 20.04 y superior, Windows 10 y superior (solo 64-bit).(Usado Windows 11 v23H2)
 - **Navegadores compatibles:** Google Chrome v125 / Edge v125 / Electron v118 (No soporta Firefox debido a problemas de la versión con peticiones de la web)
-- **Entorno de ejecución:**  Node 12 o superiores ( Usada en el proyecto: Node.js v18.18 + NPM 10.2.1)
+- **Entorno de ejecución:**  Node 18 o superiores ( Usada en el proyecto: Node.js v18.18 + NPM 10.2.1)
 - **Java 8 como mínimo (1.8.0)**
 
 ### Instalación y ejecución
@@ -156,6 +156,8 @@ Para ejecutar las pruebas, escribe:
     
 # Tecnologías utilizadas
 
+- **JavaScript**
+  
 - **cypress:** "13.8.1"
    
 - **cypress-cucumber-preprocessor:** "4.3.1",
