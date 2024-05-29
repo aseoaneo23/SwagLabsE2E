@@ -21,7 +21,7 @@ Feature: Checkout process
 
   Scenario Outline: fill out checkout information with invalid information
     Given a user that proceeds to checkout
-    When the user enters invalid first name: "<fname>", last name: "<lname>" and/or zip code: "<zcode>"
+    When the user enters invalid first name: "<fname>", last name: "<lname>" or zip code: "<zcode>"
     Then the page shows an "<error>"
 
     Examples:
@@ -34,6 +34,6 @@ Feature: Checkout process
 
 
   Scenario: complete the purchase
-    Given the user is on the checkout page
+    Given the user is on the overview page
     When the user confirms the order
     Then the user should see an order confirmation message

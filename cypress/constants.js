@@ -39,6 +39,9 @@ export const checkout_constants = {
     CONTINUE_BTN : '[data-test="continue"]',
     CHECKOUT_URL : 'https://www.saucedemo.com/checkout-step-one.html',
     OVERVIEW_URL : 'https://www.saucedemo.com/checkout-step-two.html',
+    FNAME_EXAMPLE:'Juan',
+    LNAME_EXAMPLE : 'Rodríguez',
+    ZCODE_EXAMPLE : '15660'
 }
 
 export const overview_constants = {
