@@ -1,6 +1,7 @@
 import Login from '../../pages/login_page'
 import MainPage from '../../pages/main_page'
 import CheckoutPage from '../../pages/checkout_page'
+import CartPage from '../../pages/cart_page'
 
 Given('the user is logged in', () => {
     Login.visitSwagLabs()
@@ -11,16 +12,16 @@ Given('the user is logged in', () => {
 Given('the user has products in the cart', () => {
     MainPage.addProductsToCart()
     CheckoutPage.navigateToCart()
-    CheckoutPage.checkProductsOfTheCart()
+    CartPage.checkProductsOfTheCart()
 })
 
 Given('a user that proceeds to checkout', () => {
-    CheckoutPage.continueToCheckout()
+    CartPage.continueToCheckout()
     CheckoutPage.checkOnCheckoutPage()
 })
 
 Given('the user is on the overview page', () => {
-    CheckoutPage.continueToCheckout()
+    CartPage.continueToCheckout()
     CheckoutPage.checkOnCheckoutPage()
     CheckoutPage.completeValidInformation()
     CheckoutPage.continueToOverview()

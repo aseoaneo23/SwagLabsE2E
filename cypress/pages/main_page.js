@@ -10,8 +10,7 @@ class MainPage {
         getAddToCartBtn: () => cy.get(main_page_constants.ADD_TO_CART_BTN),
         selectedProducts: [],
         removedProducts: [],
-        getCartBtn: () => cy.get(cart_constants.CART_BTN),
-        getCartElements: () => cy.get(cart_constants.CART_LIST),
+        getCartBtn: () => cy.get(cart_constants.CART_BTN)
     }
 
     //Replace id on constant to click on specific button
@@ -79,6 +78,7 @@ class MainPage {
     }
 
     //This function generates 1 product selector and clicks on them, then cleans the array and appends the removed products to it
+    // No navigation to cart, this is why is on mainpage.
     removeProductsFromCart = () => {
         const toRemoveProduct = this.buildRemoveFromCartButton()
         cy.get(toRemoveProduct).click()
@@ -89,6 +89,7 @@ class MainPage {
 
     // This function checks if the selected products exists in the cart. It replaces "add to cart" buttons with "remove" buttons, as adding these products changes their identifier.
     // Also receives a parameter to be reutilized 
+    // Is in this object because is the check of the buttons in main page; no navigation to cart
 
     checkProductsInCart = (option) => {
         if (option === "existent") {

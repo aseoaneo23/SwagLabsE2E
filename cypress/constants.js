@@ -14,7 +14,6 @@ export const main_page_constants = {
 export const cart_constants = {
     CART_BTN : '[data-test="shopping-cart-link"]',
     CART_URL : 'https://www.saucedemo.com/cart.html',
-    CART_LIST : '[data-test="cart-list"]',
     REMOVE_FROM_CART_BTN : '[data-test="remove-sauce-labs-item"]',
     CONTINUE_TO_CHECKOUT : '[data-test="checkout"]',
     CART_ITEM : '[data-test="inventory-item"]'

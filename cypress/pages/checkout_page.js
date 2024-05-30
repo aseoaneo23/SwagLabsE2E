@@ -5,8 +5,6 @@ class CheckoutPage {
     elements = {
         getUrl: () => cy.url(),
         getCartBtn: () => cy.get(cart_constants.CART_BTN),
-        getCartItem: () => cy.get(cart_constants.CART_ITEM),
-        getContinueToCheckoutBtn: () => cy.get(cart_constants.CONTINUE_TO_CHECKOUT),
         getFNameInput: () => cy.get(checkout_constants.FIRST_NAME_INPUT),
         getLNameInput: () => cy.get(checkout_constants.LAST_NAME_INPUT),
         getZCodeInput: () => cy.get(checkout_constants.ZIPCODE_INPUT),
@@ -16,10 +14,6 @@ class CheckoutPage {
     }
 
     navigateToCart = () => this.elements.getCartBtn().click()
-
-    checkProductsOfTheCart = () => this.elements.getCartItem().should('exist')
-
-    continueToCheckout = () => this.elements.getContinueToCheckoutBtn().click()
 
     checkOnCheckoutPage = () => this.elements.getUrl().should('eq', checkout_constants.CHECKOUT_URL)
 
