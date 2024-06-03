@@ -21,9 +21,9 @@
 
 Proyecto en desarrollo para trabajo de fin de ciclo de Desarrollo de Aplicaciones Web, basado en una *suite* de pruebas [E2E](https://qalified.com/es/blog/end-to-end-testing/). El objetivo es mostrar la utilidad de esta arquitectura de pruebas que cada vez toma más protagonismo en el mundo del quality assurance.
 
-Este proyecto se centra en la automatización de pruebas sobre la web de [Swag Labs](https://www.saucedemo.com/) la cuál contiene funcionalidad adecuada para llevar a cabo un plan de testing de extremo a extremo.
+Este proyecto se centra en la automatización de pruebas sobre la web de [Swag Labs](https://www.saucedemo.com/) la cual contiene funcionalidad adecuada para llevar a cabo un plan de testing de extremo a extremo.
 
-Se estudia las funcionalidades principales de cada página con el fin de asegurar el correcto funcionamiento de la interfaz por medio de tests que ayudan en la labor de [QA](https://ed.team/blog/que-es-y-que-hace-un-analista-qa).
+Se estudian las funcionalidades principales de cada página con el fin de asegurar el correcto funcionamiento de la interfaz por medio de tests que ayudan en la labor de [QA](https://ed.team/blog/que-es-y-que-hace-un-analista-qa).
 
 El vídeo publicitario del proyecto se puede encontrar en [Teaser](https://youtu.be/qxe6HxAC_p4?si=q6eVeTnfxYjiWVHT)
 
@@ -130,7 +130,7 @@ SwagLabsE2E
 
 # Acceso al Proyecto
 
-Instrucciones acerca de requerimientos, instalación y ejecucción del proyecto de forma totalmente guiada
+Instrucciones acerca de requerimientos, instalación y ejecución del proyecto de forma totalmente guiada
 
 ### Requerimientos
 
@@ -172,7 +172,7 @@ Para ejecutar las pruebas, escribe:
 
 # Licencia
 
-La licencia de este proyecto está enfocada al marco educativo, por lo que sus uso se reserva a fines únicamente orientados a su evaluación.
+La licencia de este proyecto está enfocada en el marco educativo, por lo que sus uso se reserva a fines únicamente orientados a su evaluación.
 
 # Agradecimientos
 
