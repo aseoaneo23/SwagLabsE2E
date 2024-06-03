@@ -1,7 +1,7 @@
 ![SwagLabs_E2E_suit](https://github.com/aseoaneo23/SwagLabsE2E/assets/145000901/a540e0b3-2fbb-4be0-a1f9-ab4b90b3e2c9)
 
 ![Static Badge](https://img.shields.io/badge/PFC%20DAW-%20blue)
- ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green) 
+ ![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-green) 
  ![Static Badge](https://img.shields.io/badge/NPM-v10.2.1-lightblue) 
  ![Static Badge](https://img.shields.io/badge/Node-v18.18-lightgreen)
  ![Static Badge](https://img.shields.io/badge/Cypress-v13.8.1-purple)
@@ -21,13 +21,16 @@
 
 Proyecto en desarrollo para trabajo de fin de ciclo de Desarrollo de Aplicaciones Web, basado en una *suite* de pruebas [E2E](https://qalified.com/es/blog/end-to-end-testing/). El objetivo es mostrar la utilidad de esta arquitectura de pruebas que cada vez toma más protagonismo en el mundo del quality assurance.
 
-Este proyecto se centra en la automatización de pruebas sobre la web de [Swag Labs](https://www.saucedemo.com/) la cuál contiene funcionalidad adecuada para llevar a cabo un plan de testing de extremo a extremo.
+Este proyecto se centra en la automatización de pruebas sobre la web de [Swag Labs](https://www.saucedemo.com/) la cual contiene funcionalidad adecuada para llevar a cabo un plan de testing de extremo a extremo.
 
-Se estudia las funcionalidades principales de cada página con el fin de asegurar el correcto funcionamiento de la interfaz por medio de tests que ayudan en la labor de [QA](https://ed.team/blog/que-es-y-que-hace-un-analista-qa).
+Se estudian las funcionalidades principales de cada página con el fin de asegurar el correcto funcionamiento de la interfaz por medio de tests que ayudan en la labor de [QA](https://ed.team/blog/que-es-y-que-hace-un-analista-qa).
+
+El vídeo publicitario del proyecto se puede encontrar en [Teaser](https://youtu.be/qxe6HxAC_p4?si=q6eVeTnfxYjiWVHT)
+
 
 # Estado del proyecto 
 
-🏗️ En desarrollo 🏗️
+🛫 Finalizado 🛬
 
 # Estructura del proyecto 
 
@@ -127,9 +130,9 @@ SwagLabsE2E
 
 # Acceso al Proyecto
 
-Instrucciones acerca de requerimientos, instalación y ejecucción del proyecto de forma totalmente guiada
+Instrucciones acerca de requerimientos, instalación y ejecución del proyecto de forma totalmente guiada
 
-### Requirements
+### Requerimientos
 
 - **Entorno (SO):**  macOS 10.15 y superior, Linux Ubuntu 20.04 y superior, Windows 10 y superior (solo 64-bit).(Usado Windows 11 v23H2)
 - **Navegadores compatibles:** Google Chrome v125 / Edge v125 / Electron v118 (No soporta Firefox debido a problemas de la versión con peticiones de la web)
@@ -169,9 +172,9 @@ Para ejecutar las pruebas, escribe:
 
 # Licencia
 
-La licencia de este proyecto está enfocada al marco educativo, por lo que sus uso se reserva a fines únicamente orientados a su evaluación.
+La licencia de este proyecto está enfocada en el marco educativo, por lo que sus uso se reserva a fines únicamente orientados a su evaluación.
 
 # Agradecimientos
 
-En esta sección quería agradecer el papel de mi empresa de prácticas, en concreto de mis responsables de QA, los cuáles me han ayudado a establecer unos conocimientos firmes sobre buenas prácticas y manejo de herramientas.
+En esta sección quería agradecer el papel de mi empresa de prácticas, en concreto de mis responsables de QA, los cuales me han ayudado a establecer unos conocimientos firmes sobre buenas prácticas y manejo de herramientas.
 
