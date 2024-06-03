@@ -1,7 +1,7 @@
 import Login from '../../pages/login_page'
 import MainPage from '../../pages/main_page'
 
-Given('a logged-in user', (usuario,contraseña) => {
+Given('a logged-in user', () => {
     Login.visitSwagLabs()
     Login.completeValidCredentials()
     Login.checkRedirection()

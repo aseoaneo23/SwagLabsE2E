@@ -45,7 +45,7 @@ Then('the user should see a overview page', () => {
     CheckoutPage.checkRedirectToOverview()
 })
 
-Then('the page shows an {string}', (error) => {
+Then('the page shows an {string}', error => {
     CheckoutPage.checkErrorMessage(error)
 })
 

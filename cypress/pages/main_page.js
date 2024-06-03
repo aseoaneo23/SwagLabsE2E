@@ -91,7 +91,7 @@ class MainPage {
     // Also receives a parameter to be reutilized 
     // Is in this object because is the check of the buttons in main page; no navigation to cart
 
-    checkProductsInCart = (option) => {
+    checkProductsInCart = option => {
         if (option === "existent") {
             this.elements.selectedProducts.forEach(product => {
                 cy.get(product.replace('add-to-cart', 'remove')).should('be.visible')

@@ -12,6 +12,6 @@ Then('the user is redirected to the home page', () => {
     Login.checkRedirection()
 })
 
-Then('the page shows an error: {string}', (error) => {
+Then('the page shows an error: {string}', error => {
     Login.checkErrorMessage(error)
 })
