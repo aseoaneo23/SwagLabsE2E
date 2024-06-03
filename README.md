@@ -1,7 +1,7 @@
 ![SwagLabs_E2E_suit](https://github.com/aseoaneo23/SwagLabsE2E/assets/145000901/a540e0b3-2fbb-4be0-a1f9-ab4b90b3e2c9)
 
 ![Static Badge](https://img.shields.io/badge/PFC%20DAW-%20blue)
- ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green) 
+ ![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-green) 
  ![Static Badge](https://img.shields.io/badge/NPM-v10.2.1-lightblue) 
  ![Static Badge](https://img.shields.io/badge/Node-v18.18-lightgreen)
  ![Static Badge](https://img.shields.io/badge/Cypress-v13.8.1-purple)
@@ -27,7 +27,7 @@ Se estudia las funcionalidades principales de cada página con el fin de asegura
 
 # Estado del proyecto 
 
-🏗️ En desarrollo 🏗️
+🛫 Finalizado 🛬
 
 # Estructura del proyecto 
 
@@ -173,5 +173,5 @@ La licencia de este proyecto está enfocada al marco educativo, por lo que sus u
 
 # Agradecimientos
 
-En esta sección quería agradecer el papel de mi empresa de prácticas, en concreto de mis responsables de QA, los cuáles me han ayudado a establecer unos conocimientos firmes sobre buenas prácticas y manejo de herramientas.
+En esta sección quería agradecer el papel de mi empresa de prácticas, en concreto de mis responsables de QA, los cuales me han ayudado a establecer unos conocimientos firmes sobre buenas prácticas y manejo de herramientas.
 
