@@ -25,6 +25,9 @@ Este proyecto se centra en la automatización de pruebas sobre la web de [Swag L
 
 Se estudia las funcionalidades principales de cada página con el fin de asegurar el correcto funcionamiento de la interfaz por medio de tests que ayudan en la labor de [QA](https://ed.team/blog/que-es-y-que-hace-un-analista-qa).
 
+El vídeo publicitario del proyecto se puede encontrar en [Teaser](https://youtu.be/qxe6HxAC_p4?si=q6eVeTnfxYjiWVHT)
+
+
 # Estado del proyecto 
 
 🛫 Finalizado 🛬
